@@ -1,0 +1,12 @@
+name: "Dr. Dmitry O. Gorodnichy"
+navbar:
+  title: "www.gorodnichy.ca"
+  right:
+    - text: "Publications"
+      href: https://sites.google.com/site/dmitrygorodnichy/publications
+    - text: "Profile"
+      href: https://sites.google.com/site/dmitrygorodnichy/profile
+
+
+
+
