@@ -1,0 +1,11 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^dmitry\.gorodnichy\.ca$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.dmitry\.gorodnichy\.ca$
+RewriteRule ^/?$ "http\:\/\/sites\.google\.com\/site\/dmitrygorodnichy" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^science\.gorodnichy\.ca$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.science\.gorodnichy\.ca$
+RewriteRule ^/?$ "http\:\/\/sites\.google\.com\/site\/dmitrygorodnichy" [R=301,L]
+

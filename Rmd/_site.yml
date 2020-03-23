@@ -1,0 +1,16 @@
+name: "Dr. Dmitry O. Gorodnichy"
+navbar:
+  title: "Dmitry O. Gorodnichy"
+  right:
+    - text: "Profile"
+      href: https://sites.google.com/site/dmitrygorodnichy/profile
+    - text: "Publications"
+      href: https://sites.google.com/site/dmitrygorodnichy/publications
+    - text: "Science"
+      href: https://sites.google.com/site/dmitrygorodnichy
+    - text: "Music"
+      href: http://gorodnichy.ca/First-Day-Of-Love.htm
+
+
+
+

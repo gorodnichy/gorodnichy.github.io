@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Dmitry O. Gorodnichy</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Dmitry O. Gorodnichy</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://sites.google.com/site/dmitrygorodnichy/profile">Profile</a>
+</li>
+<li>
+  <a href="https://sites.google.com/site/dmitrygorodnichy/publications">Publications</a>
+</li>
+<li>
+  <a href="https://sites.google.com/site/dmitrygorodnichy">Science</a>
+</li>
+<li>
+  <a href="http://gorodnichy.ca/First-Day-Of-Love.htm">Music</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Dmitry O. Gorodnichy</h1>
+
+</div>
+
+
+<style type="text/css">
+.title {
+  display: none;
+}
+
+#getting-started img {
+  margin-right: 10px;
+}
+
+</style>
+<div class="row" style="padding-top: 30px;">
+<div class="col-sm-2">
+<p><font size=-2></p>
+<!-- ![Contact: dmitry@gorodnichy.ca](http://www.gorodnichy.ca/images/dmitry_gorodnichy.jpg) -->
+<!-- !(http://www.gorodnichy.ca/images/dmitry_gorodnichy.jpg) does not work-->
+<p><br></p>
+<!-- **Quick links:** -->
+<p><strong>Popular:</strong> <!-- <br> --></p>
+<p><a href="https://itrack.shinyapps.io/border">“Border Wait Time Prediction and Analysis” Application (iTrack Border)</a></p>
+<p><a href="https://itrack.shinyapps.io/PSES/">Public Service Employee Survey results interactive tracker (iTrack PSES)</a></p>
+<!-- ["Analysis of the effect of ageing, age, and other factors on iris recognition performance using NEXUS scores dataset"](https://digital-library.theiet.org/content/journals/10.1049/iet-bmt.2018.5105), IET Biometrics journal, Jan 2019.  -->
+<!-- ["Design and Evaluation of Biometric-enabled Interview-Assisting Traveller Screening technology for Automated Border Control" (a.k.a Automated Lie Detection systems)](), DRDC Report, Oct 2018. -->
+<!-- 
+<a href="http://pubs.drdc-rddc.gc.ca/BASIS/pcandid/www/engpub/SDW?M%3D1%26W%3DAUTHOR+inc+phrase+like+%22Gorodnichy%22+sort+by+repdate+descend">"Analysis of Risks and Trends in Automated Border Control (ART in ABC)", DRDC Report, Sep. 2016</a>; 
+<a href="https://sites.google.com/site/vistercanada/projects/DRDC-CSS#TOC-ART-in-ABC:-Risk-analysis-of-face-and-iris-biometrics-in-border-access-control-applications-">ART in ABC", Presentation at Frontex, July 2015</a>.
+<br>
+
+<a href="https://sites.google.com/site/dmitrygorodnichy/publications#TOC-Face-Recognition-in-Video">Evaluation of Video Analytics and Face Recognition technology,  DRDC reports, July 2014</a>;  <a href="https://www.nist.gov/itl/iad/image-group/ibpc-2014-presentations">Presentations at NIST</a>.
+
+-->
+<p></font></p>
+</div>
+<div class="col-sm-9">
+<h3 id="greetings-bonjour-вітаю-день-добрый"><em>Greetings, Bonjour, Вітаю, День Добрый !</em></h3>
+<!-- {style="padding-top: 0px;"} -->
+<p>I’m a Senior Scientist at the <i>Canada Border Services Agency</i>, <!-- and [Adjunct Professor at the University of Ottawa](http://engineering.uottawa.ca/eecs/people/gorodnichy-dmitry), --> working on the applications of <em>Artificial Intelligence</em> and <em>Data Science</em> for border control.</p>
+<!-- Automated Border Control, Biometrics and Video Analytics. -->
+<p>I have Ph.D. in Applied Mathematics and Computer Science, authored over a hundred of scientific papers, made over a dozen of inventions, including the <a href="www.nouse.ca">Nouse®</a> (Nose as Mouse) Intelligent Vision Interface, <!-- which is used by Ontario long-care facilities and featured by the [Canada Science and Technology Museum](http://collect-connect.cstmcweb.ca/2015/02/community-support-click-nose/). --> which was <a href="https://sites.google.com/site/dmitrygorodnichy/Nouse/in-news">featured world-wide</a> and is now in <a href="http://collect-connect.cstmcweb.ca/2015/02/community-support-click-nose/">Canada Science and Technology Museum</a>. <!-- organized and chaired a number of conferences in Video Anaytics, Neural Networks and Video Recognition, published by IEEE.  --></p>
+<p>Recently, I’ve been developing Web Applications that leverage the value of Open Canada data using various open source Data Science and Machine Learning tools: <a href="https://itrack.shinyapps.io/PSES">iTrack PSES</a> and <a href="https://itrack.shinyapps.io/border">iTrack Border</a>.</p>
+<p>Apart of Science, I enjoy sports (once a member of the Ukrainian U-14 Olympic and the University of Alberta gymnastics varsity teams), compose <a href="http://gorodnichy.ca/First-Day-Of-Love.htm">music</a> and interpret in Russian and Ukrainian my favourite <!-- I express my feelings in songs and bosa-nova interpretations.  --> <!-- Among other things, I'm Level 9 gymnast, interpret --> <a href="http://bookdown.org/gorodnichy/jobim">bosa-nova songs</a>.</p>
+<!-- I am also Adjunct Professor at the <a href="http://engineering.uottawa.ca/eecs/people/gorodnichy-dmitry">University of Ottawa</a> and a co-founder of <a href="http://ivim.ca/">IVIM Inc.</a> - the exclusive provider of <a href="http://www.nouse.ca/">Nouse®</a>, which is the<i> Ontario Ministry of Health and Long-Care</i> recommended mouse alternative technology that I have developed at the National Research Council of Canada. -->
+<!-- This site mirrors <a href="http://www.gorodnichy.ca/">www.gorodnichy.ca</a> and serves to archive information related to my scientific and engineering work. -->
+<!-- We speak English, français, українською и по-русски and  -->
+<p>I can be reached at <em>[name]<span class="citation">@gorodnichy.ca</span></em> or <em>[name]<span class="citation">@ivim.ca</span></em>.</p>
+<p>Enjoy exploring more!</p>
+<p>Elsewhere: <br> <!-- [Stackoverflow](https://stackoverflow.com/users/6805670/ivim), --> <a href="https://gcconnex.gc.ca/profile/Dmitry.Gorodnichy">GCConnex</a>, <a href="https://github.com/gorodnichy">GitHub</a>, <a href="https://stackexchange.com/users/9151121/ivim">Stack Exchange</a>, <a href="https://www.researchgate.net/profile/Dmitry_Gorodnichy">ResearchGate</a>, <a href="https://scholar.google.ca/citations?user=T_Zi7wYAAAAJ">GoogleScholar</a>, <a href="http://www.linkedin.com/pub/dmitry-gorodnichy">LinkedIn</a>, <!-- [Google+](https://plus.google.com/114397903084174932514), --> <a href="https://www.facebook.com/people/Dmitry-O-Gorodnichy/100010429878764">Facebook</a>, <a href="https://lyricstranslate.com/en/translator/dmitry-gorodnichy">LyricsTranslate</a> <!-- [Ask Google]() --></p>
+<!-- (accès limité)  -->
+</div>
+</div>
+<div class="row">
+<hr />
+<center>
+<div style="display: flex; justify-content: center;">
+<!-- <img width="100%" src="images/leader21+head.jpg"></img> -->
+<div class="figure">
+<img src="images/leader21+head.jpg" alt="Printout from “Leaders of Tomorrow”" />
+<p class="caption">Printout from “Leaders of Tomorrow”</p>
+</div>
+</div>
+<font size=-2> Copyright © Dmitry O. Gorodnichy <br> <!-- Site built using [R Markdown](http://rmarkdown.rstudio.com/rmarkdown_websites.html) and supported by GitHub --> www.gorodnichy.ca </font>
+<center>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

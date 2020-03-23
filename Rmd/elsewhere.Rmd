@@ -1,0 +1,171 @@
+
+
+<!-- ```{r elsewhere,child='elsewhere.Rmd} -->
+<!-- ``` -->
+
+
+
+<a href="https://sites.google.com/site/dmitrygorodnichy">
+<img alt="Explore davantage"
+src="images/leader21-1-canvas-fr-s.jpg" 
+onmouseover="this.src='images/leader21-2-intro-canvas-fr-s.jpg'" 
+onmouseout="this.src='images/leader21-1-canvas-fr-s.jpg'" 
+/>
+</a>
+
+
+
+<!-- 
+
+Where  to go from here:
+
+
+- Professional and academic work:  
+    * <a href="https://sites.google.com/site/dmitrygorodnichy/projects">Projects and developed technologies </a>   
+        + <a href="https://sites.google.com/site/dmitrygorodnichy/Nouse">Nouse technology publications and history</a>   
+        + <a href="https://sites.google.com/site/dmitrygorodnichy/projects/PhD-PINN/LibPINN">Open Source Associative Neural Network Library</a>    
+    * <a href="https://sites.google.com/site/dmitrygorodnichy/publications">Publications </a>
+    * <a href="https://sites.google.com/site/dmitrygorodnichy/lectures">Lectures and presentations</a> 
+    * <a href="https://sites.google.com/site/dmitrygorodnichy/profile">Profile, Awards, Media coverage</a>  
+    * <a href="https://sites.google.com/site/dmitrygorodnichy/video-recognition/conferences">Chaired and organized conferences,  other professional services</a>
+
+
+- Recreational science:
+<ul><li>
+<a href="https://sites.google.com/site/dmitrygorodnichy/projects/cameras-on-canadarm">What do video cameras on Canadarm see ?</a></li>
+<li>
+<a href="https://sites.google.com/site/dmitrygorodnichy/projects/FRiV">Neurons &amp; synapses : From Pavlov dogs to Face Recognition</a></li>
+<li>
+[Interesting facts about Visual Attention and how it is used in Computer Vision](http://www.visioninterface.net/fpiv04/preface.html) </li>
+<li> 
+[Beautiful geometry of the human face and its use in automated face recognition](http://www.visioninterface.net/fpiv04/preface.html)</li> 
+ <li> 
+<a href="https://sites.google.com/site/dmitrygorodnichy/projects/PhD-AI-vision">Meet "Boticelli" - a single-eye robot that could navigate himself around</a></li>
+<li>
+<a href="https://sites.google.com/site/dmitrygorodnichy/projects/piano-pedagogy">Watch how pianist use their fingers and hands</a> </li>
+</ul>
+<br>
+-->
+
+
+
+
+
+ <font size=-1>
+ 
+ Looking for another Gorodnichy? - Check out here.
+
+Le famille Gorodnichy ailleurs:
+
+- Les peintures du 
+<a href="https://www.youtube.com/watch?v=uqBIvWtWTmI">Denis A. Gorodnichy
+</a> impressionnist contemporain ukrainien 
+<!-- http://art-on-line.com.ua/ru/555_gorodnichiy-denis-jivopis -->
+ 
+- La musique jazz du saxofonist, <a href="http://domino-music.ru/?mp3=Gorodnichy&artist=0">
+Alexandr Gorodnichy 
+</a> 
+
+<!-- (<a href="https://www.youtube.com/watch?v=X9Xx5cq3WS4">YouTube</a>) 
+<a href="https://www.youtube.com/playlist?list=PLdIFG6ZL8deK0uanc4viIB_X96ij14bs6">
+Trompette, piano et chant de Dasha A. Gorodnichy (Semionova)</a>
+
+
+<br> - <br>
+
+
+Soprano d'une étudiant de l'Université d'Ottawa,  
+<a href="https://www.youtube.com/playlist?list=PLdIFG6ZL8deLM-Fk_99kpdyYfnr5WPe1t">Anastasiya  A. Gorodnicha 
+</a> 
+
+
+<br> - <br>
+
+
+
+Poesie et traductions poétiques du professeur des langues étrangères 
+<a href="https://bookdown.org/gorodnichy/andre">Andriy Gorodnichy
+</a>
+
+<br> -  <br>
+
+<!-- a href="https://bookdown.org/gorodnichy/jobim/">
+Interprétations et analyse des sentiments de chansons populaires de bossa-nova par Dmitry O. Gorodnichy
+</a> 
+-->
+<br> -  <br>
+
+<a href="https://goo.gl/photos/6dDncHi2XvpbgJbY6">Peintures</a>, 
+<a href="https://www.proza.ru/avtor/ogorodnichy">romans</a>, 
+<a href="https://www.researchgate.net/scientific-contributions/82506576_O_P_Gorodnichii">publications scientifiques</a> 
+du physicien des semi-conducteurs
+Oleg P. Gorodnichy
+
+<!-- 
+<br> -  <br>
+<a href="
+https://www.youtube.com/playlist?list=PLdIFG6ZL8deKLvcbR2rrDuwa8ObMDUDV0">
+Violin, patinage  artistique et l'art dramatique de Roxana Gorodnichy
+</a>
+
+<br> -  <br>
+
+<a href="https://www.youtube.com/playlist?list=PLdIFG6ZL8deJyIpkpv5Wl3COpSzmAQ9UM">
+Patinage et gymnastique artistique de Mila Gorodnichy
+</a> 
+
+
+
+
+<br> -  <br>
+
+Music playing and singing by Ludmila Gorodnichy
+<br> -  <br>
+
+Vera
+<br> -  <br>
+
+Olga Lyra
+-->
+
+
+
+<!-- INVISABLE - Default Statcounter code for Gorodnichy portal http://www.gorodnichy.ca --
+<script type="text/javascript">
+var sc_project=11878375; 
+var sc_invisible=1; 
+var sc_security="324598d7"; 
+var sc_https=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="http://statcounter.com/" target="_blank"><img class="statcounter"
+src="//c.statcounter.com/11878375/0/324598d7/1/" alt="Web
+Analytics"></a></div></noscript>
+ !-- End of Statcounter Code -->
+
+
+
+
+<div align=right>
+  
+<!-- Default Statcounter code for Gorodnichy portal http://www.gorodnichy.ca -->
+<script type="text/javascript">
+var sc_project=11878375; 
+var sc_invisible=0; 
+var sc_security="324598d7"; 
+var sc_https=1; 
+var sc_remove_link=1; 
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." :
+"http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="//c.statcounter.com/11878375/0/324598d7/0/" alt="Web Analytics Made Easy -
+StatCounter"></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+</div>
